@@ -10,6 +10,7 @@ module.exports = {
   entry: './index',
   output: {
     path: path.resolve(__dirname, './build'),
+    publicPath: '/',
     filename: '[name].js'
   },
 
@@ -29,7 +30,11 @@ module.exports = {
         loader: extractTextplugin.extract('style', 'css!postcss!less')
       },
 
-      
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg)$/,
+        loader: 'file?name=[path][name].[ext]'
+      }
+
     ]
   },
 
