@@ -50,7 +50,7 @@
 	
 	__webpack_require__(3);
 	
-	var _hello = __webpack_require__(9);
+	var _hello = __webpack_require__(30);
 	
 	(0, _hello.hello)("TEst");
 
@@ -63,7 +63,7 @@
 
 /***/ },
 
-/***/ 9:
+/***/ 30:
 /***/ function(module, exports) {
 
 	"use strict";
